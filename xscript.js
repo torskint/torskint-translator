@@ -3,8 +3,7 @@ function loadfile(filename, filetype){
 		var fileref=document.createElement('script')
 		fileref.setAttribute("type","text/javascript")
 		fileref.setAttribute("src", filename)
-	}
-	else if (filetype=="css"){
+	} else if (filetype=="css"){
 		var fileref=document.createElement("link")
 		fileref.setAttribute("rel", "stylesheet")
 		fileref.setAttribute("type", "text/css")
@@ -17,9 +16,8 @@ function loadfile(filename, filetype){
 loadfile("//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit", "js");
 loadfile("https://cdn.jsdelivr.net/gh/torskint/torskint-translator/xstyle.css", "css");
 function googleTranslateElementInit() {
-	let csTgs = document.getElementById('custom-settings')
-	const lgParams = csTgs.dataset;
-	console.log(lgParams)
+	let tT = document.getElementById('torskint-translator')
+	const lgParams = tT.dataset;
 	var ckDomain;
 	for (var ckDomain = window.location.hostname.split("."); 2 < ckDomain.length;){
 		ckDomain.shift();
