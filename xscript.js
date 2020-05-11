@@ -3,6 +3,8 @@ function loadfile(filename, filetype){
 		var fileref=document.createElement('script')
 		fileref.setAttribute("type","text/javascript")
 		fileref.setAttribute("src", filename)
+		fileref.setAttribute("async", true)
+		fileref.setAttribute("defer", true)
 	} else if (filetype=="css"){
 		var fileref=document.createElement("link")
 		fileref.setAttribute("rel", "stylesheet")
