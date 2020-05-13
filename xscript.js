@@ -26,9 +26,9 @@ function googleTranslateElementInit() {
 	}
 	ckDomain = ";domain=" + ckDomain.join(".");
 	// domain cookie
-	document.cookie = "googtrans=/"+lgParams.xlang+"/"+lgParams.ylang+"; expires=Thu, 07-Mar-2047 20:22:40 GMT; path=/" + ckDomain;
+	// document.cookie = "googtrans=/"+lgParams.xlang+"/"+lgParams.ylang+"; expires=Thu, 07-Mar-2047 20:22:40 GMT; path=/" + ckDomain;
 	// host-only cookie (with no domain name definition)
-	// document.cookie = "googtrans=/en/fr; expires=Thu, 07-Mar-2047 20:22:40 GMT; path=/";
+	document.cookie = "googtrans=/"+lgParams.xlang+"/"+lgParams.ylang+"; expires=Thu, 07-Mar-2047 20:22:40 GMT; path=/";
 	new google.translate.TranslateElement({
 		pageLanguage: lgParams.xLang,
 		autoDisplay: false,
